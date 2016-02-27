@@ -3,7 +3,7 @@ MyComponent = React.createClass({
   mixins: [ReactMeteorData],
 
   getMeteorData() {
-    // Meteor.subscribe('posts');
+    Meteor.subscribe('posts');
     return {
       posts: Posts.find().fetch()
     }
